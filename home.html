@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+<content>
+    {% block body %}
+    <a type='button' class='btn btn-primary' href="/customer">List Customer</button>
+    </a>
+    <hr>
+    <body>
+    <form method="POST" action="/create">
+        <label>First Name</label>
+        <input type='text' name='first'>
+        <br>
+        <label>Last Name</label>
+        <input type='text' name='last'>
+        <br>
+        <input class='btn btn-primary' type='submit' value='Create Customer!'/>
+    </form>
+    </body>
+    {% end %}
+</content>
+
+

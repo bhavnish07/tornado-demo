@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+<a type='button' class='btn btn-primary' href="/customer">List Customer</button>
+</a>
+<hr>
+{% if first and last%}
+<h> Record created for User: {%if first and last%}{{first}} {{last}}{%end%}</h>
+{% else %}
+<h>No new record created</h>
+{%end%}
+{% end %}

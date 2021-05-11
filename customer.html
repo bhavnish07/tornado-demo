@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<a type='button' class='btn btn-primary' href="/">Home</button>
+</a>
+<hr>
+<table class='table table-bordered table-hover table-dark'>
+    <col width="100"/>
+    <col width="100"/>
+    {% for row in cur %}
+    <tr>
+        <td>
+            <a href="/customer/">{{str(row[0])}}
+            </a>
+        </td>
+        <td>
+            {{str(row[1])}}
+        </td>
+        <td>
+            {{str(row[2])}}
+        </td>
+    </tr>
+    {% end %}
+</table>
+{% end %}
